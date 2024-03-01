@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular_project';
+  title = 'Hello World';
+  texting = "Testando os codigos";
 }
