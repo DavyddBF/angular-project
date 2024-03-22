@@ -13,5 +13,35 @@
 
 <article>
     <h3>Class & Style Binding</h3>
-    <div></div>
+    <div>
+        Selecione uma opção:
+        <select class="testes" #opEscolhida (change)="0">
+            <option value="alert-success">Sucesso</option>
+            <option value="alert-danger">Danger</option>
+            <option value="alert-warning">Warning</option>
+            <option value="alert-info">Info</option>
+            <option value="alert-dark">Dark</option>
+        </select>
+
+        <br><br>
+
+
+        <br><br>
+
+        <div class="alert" role="alert" [class.alert-success]="opEscolhida.value === 'alert-success'">
+            Um simples alerta <strong>success</strong>. Olha só!
+        </div>
+        <div class="alert" role="alert" [class.alert-danger]="opEscolhida.value == 'alert-danger'">
+            Um simples alerta <strong>danger</strong>. Olha só!
+        </div>
+        <div class="alert" role="alert" [class.alert-warning]="opEscolhida.value == 'alert-warning'">
+            Um simples alerta <strong>warning</strong>. Olha só!
+        </div>
+        <div class="alert" role="alert" [class.alert-info]="opEscolhida.value == 'alert-info'">
+            Um simples alerta <strong>info</strong>. Olha só!
+        </div>
+        <div class="alert" role="alert" [class.alert-dark]="opEscolhida.value == 'alert-dark'">
+            Um simples alerta <strong>dark</strong>. Olha só!
+        </div>
+    </div>
 </article>
