@@ -25,4 +25,9 @@ export class PropertyBindingComponent {
   //     return 'Falso'
   //   }
   // }
+
+
+  teste(variavel:any): any {
+    console.log(variavel.value);
+  }
 }
