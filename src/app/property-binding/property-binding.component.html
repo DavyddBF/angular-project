@@ -44,7 +44,7 @@
             Um simples alerta <strong>dark</strong>. Olha só!
         </div>
 
-        <div class="alert" role="alert">
+        <div #erro class="alert alert-danger" role="alert" [style.display]="opEscolhida.value == erro.classList[1] ? 'block' : 'none'">
             Aparece apenas se houver <strong>erro</strong>
         </div>
     </div>
