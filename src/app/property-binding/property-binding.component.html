@@ -49,3 +49,28 @@
         </div>
     </div>
 </article> -->
+
+
+
+
+
+<!-- EVENT BINDING -->
+
+<style>
+    .event-binding {
+        padding: 1rem;
+    }
+</style>
+
+<section class="event-binding">
+    <article>
+        <h3>Event Binding</h3>
+        <div>
+            <button class="btn btn-primary" (click)="teste()">Me Clique</button>
+
+            <br><br>
+
+            <input (keyup)="onKeyUp($event)" type="text">
+        </div>
+    </article>
+</section>
