@@ -26,8 +26,12 @@ export class PropertyBindingComponent {
   //   }
   // }
 
+  onKeyUp(event: KeyboardEvent):void {
+    console.log((<HTMLInputElement>event.target).value);
+  }
 
-  teste(variavel:any): any {
-    console.log(variavel.value);
+
+  teste():void {
+    console.log('Clicado');
   }
 }
