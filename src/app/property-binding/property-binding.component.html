@@ -84,6 +84,7 @@
 
             <p  (mouseover)="onMouseOverOut()" 
                 (mouseout)="onMouseOverOut()"
+                [class.highlight]="isMouseOver == true"
             >Passe o mouse aqui</p>
         </div>
     </article>
