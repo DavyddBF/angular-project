@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, InputOptions } from '@angular/core';
 
 @Component({
   selector: 'app-property-binding',
@@ -25,11 +25,22 @@ export class PropertyBindingComponent {
   //     return 'Falso'
   //   }
   // }
+  valorAtual: string = '';
+  valorSalvo: string = '';
+
+  isMouseOver:boolean = false;
 
   onKeyUp(event: KeyboardEvent):void {
-    console.log((<HTMLInputElement>event.target).value);
+    this.valorAtual = (event.target as HTMLInputElement).value;
   }
 
+  numSalvo(event: string): void {
+    this.valorSalvo = event;
+  }
+  
+  onMouseOverOut():void {
+    this.isMouseOver = !this.isMouseOver;
+  }
 
   teste():void {
     console.log('Clicado');

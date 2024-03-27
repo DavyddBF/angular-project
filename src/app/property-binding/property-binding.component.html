@@ -70,7 +70,21 @@
 
             <br><br>
 
-            <input (keyup)="onKeyUp($event)" type="text">
+            <input  (keyup)="onKeyUp($event)" 
+                    (keyup.enter)="numSalvo(campoInput.value)"
+                    (blur)="numSalvo(campoInput.value)"
+                    type="text"
+                    #campoInput
+            >
+            <p>Saida: {{ valorAtual }} </p>
+            <p>Valor Salvo: {{ valorSalvo }} </p>
+            <p>Valor Salvo - Blur: {{ valorSalvo }} </p>
+
+            <br><br>
+
+            <p  (mouseover)="onMouseOverOut()" 
+                (mouseout)="onMouseOverOut()"
+            >Passe o mouse aqui</p>
         </div>
     </article>
 </section>
