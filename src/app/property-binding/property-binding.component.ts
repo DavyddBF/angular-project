@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, InputOptions } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 
+import { Pessoa } from '../pessoa';
+
 @Component({
   selector: 'app-property-binding',
   standalone: true,
@@ -51,6 +53,11 @@ export class PropertyBindingComponent {
   // }
 
   nome: string | Event = 'abc';
+
+  pessoa: Pessoa = {
+    nome: 'Davyd',
+    idade: 18
+  }
 
   teste():void {
     console.log('Clicado');
