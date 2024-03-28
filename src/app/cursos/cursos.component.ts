@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
+import { CursosService } from './cursos.service';
+
 @Component({
   selector: 'app-cursos',
   standalone: true,
@@ -12,9 +14,11 @@ import { Component } from '@angular/core';
 })
 export class CursosComponent {
   site: string;
-  cursos: string[] = ['Java', 'JS', 'Python', 'Ruby'];
+  cursos: string[];
 
-  constructor() {
+  constructor(private cursosService: CursosService) {
     this.site = 'jw.org';
+
+    this.cursos = this.cursosService.getCursos();
   }
 }
