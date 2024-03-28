@@ -25,22 +25,28 @@ export class PropertyBindingComponent {
   //     return 'Falso'
   //   }
   // }
-  valorAtual: string = '';
-  valorSalvo: string = '';
 
-  isMouseOver:boolean = false;
 
-  onKeyUp(event: KeyboardEvent):void {
-    this.valorAtual = (event.target as HTMLInputElement).value;
-  }
 
-  numSalvo(event: string): void {
-    this.valorSalvo = event;
-  }
+
+  // valorAtual: string = '';
+  // valorSalvo: string = '';
+
+  // isMouseOver:boolean = false;
+
+  // onKeyUp(event: KeyboardEvent):void {
+  //   this.valorAtual = (event.target as HTMLInputElement).value;
+  // }
+
+  // numSalvo(event: string): void {
+  //   this.valorSalvo = event;
+  // }
   
-  onMouseOverOut():void {
-    this.isMouseOver = !this.isMouseOver;
-  }
+  // onMouseOverOut():void {
+  //   this.isMouseOver = !this.isMouseOver;
+  // }
+
+  
 
   teste():void {
     console.log('Clicado');
