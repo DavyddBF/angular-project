@@ -14,43 +14,43 @@ import { Pessoa } from '../pessoa';
   styleUrl: './property-binding.component.css'
 })
 export class PropertyBindingComponent {
-  // url: string = 'jw.org';
-  // valor1: number = 3;
-  // valor2: number = 10;
+  url: string = 'jw.org';
+  valor1: number = 3;
+  valor2: number = 10;
 
-  // boleano: boolean = true;
+  boleano: boolean = true;
 
-  // getValor(): number {
-  //   return 1;
-  // }
+  getValor(): number {
+    return 1;
+  }
 
-  // getTrueOrFalse(): string {
-  //   if(this.boleano && true) {
-  //     return 'Verdadeiro';
-  //   } else {
-  //     return 'Falso'
-  //   }
-  // }
-
-
+  getTrueOrFalse(): string {
+    if(this.boleano && true) {
+      return 'Verdadeiro';
+    } else {
+      return 'Falso'
+    }
+  }
 
 
-  // valorAtual: string = '';
-  // valorSalvo: string = '';
 
-  // isMouseOver:boolean = false;
 
-  // onKeyUp(event: KeyboardEvent):void {
-  //   this.valorAtual = (event.target as HTMLInputElement).value;
-  // }
+  valorAtual: string = '';
+  valorSalvo: string = '';
 
-  // numSalvo(event: string): void {
-  //   this.valorSalvo = event;
-  // }
+  isMouseOver:boolean = false;
+
+  onKeyUp(event: KeyboardEvent):void {
+    this.valorAtual = (event.target as HTMLInputElement).value;
+  }
+
+  numSalvo(event: string): void {
+    this.valorSalvo = event;
+  }
   
-  // onMouseOverOut():void {
-  //   this.isMouseOver = !this.isMouseOver;
-  // }
+  onMouseOverOut():void {
+    this.isMouseOver = !this.isMouseOver;
+  }
 
   nome: string | Event = 'abc';
 
