@@ -123,7 +123,12 @@
             <p>Você digitou {{ nome }}</p>
 
             <div>
-
+                <input type="text" 
+                    [(ngModel)]="pessoa.nome"
+                />
+                <input type="text" 
+                    [(ngModel)]="pessoa.idade"
+                />
             </div>
         </div>
     </article>
