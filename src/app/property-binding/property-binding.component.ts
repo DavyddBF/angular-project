@@ -1,9 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, InputOptions } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-property-binding',
   standalone: true,
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   templateUrl: './property-binding.component.html',
   styleUrl: './property-binding.component.css'
 })
@@ -46,7 +50,7 @@ export class PropertyBindingComponent {
   //   this.isMouseOver = !this.isMouseOver;
   // }
 
-  
+  nome: string | Event = 'abc';
 
   teste():void {
     console.log('Clicado');
