@@ -95,11 +95,36 @@
 
 <!-- TWO-WAY DATA BINDING -->
 
+<style>
+    .two-way-binding {
+        padding: 2rem;
+    }
+</style>
+
 <section class="two-way-binding">
     <article>
         <h3>TWO-WAY DATA BINDING</h3>
         <div>
+            <input type="text" 
+                [value]="nome" 
+                (input)="nome = input.value"
+                #input
+            />
 
+            <input type="text" 
+                [ngModel]="nome" 
+                (ngModelChange)="nome = $event"
+            />
+
+            <input type="text"
+                [(ngModel)]="nome"
+            />
+
+            <p>Você digitou {{ nome }}</p>
+
+            <div>
+
+            </div>
         </div>
     </article>
 </section>
