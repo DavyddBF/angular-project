@@ -1,11 +1,19 @@
-<nav>
-  <div class="nav-wrapper">
-    <a class="brand-logo right">Rotas</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a>Login</a></li>
-      <li><a>Cursos</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" style="padding-left: 1rem;">Rotas</a>
+  <div class="collapse navbar-collapse" id="textoNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cursos</a>
+      </li>
     </ul>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
