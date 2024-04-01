@@ -10,4 +10,9 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'rotas';
+  selecionado: boolean = false
+
+  ativar() {
+   this.selecionado = !this.selecionado;
+  }
 }
