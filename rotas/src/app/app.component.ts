@@ -12,4 +12,12 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'rotas';
+  espacamentoCss: string = '1.5rem';
+
+  estilos(): string {
+    return `
+      padding-left: 1rem;
+      color: blue;
+    `
+  }
 }
